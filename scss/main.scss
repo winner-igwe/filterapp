@@ -1,0 +1,233 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+@import 'resets';
+@import 'variables';
+
+
+.header {
+    width: 100vw;
+    min-height: 156px;
+    background-color: $darkBlue;
+    // background-image: url('../images/bg-header-desktop.svg');
+
+    img {
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+    }
+    .mobile {
+        display:none;
+    }
+}
+
+.filter_con {
+    width: 80vw;
+    // margin: 0 10%;
+    position: absolute;
+    left: 10%;
+    background-color: #fff;
+    display: flex;
+    padding: .6rem 1.2rem;
+    justify-content: space-between;
+    align-items: center;
+    top: 8.5rem;
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+
+
+.btn_span {
+    flex: 4;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+
+    .btn {
+        vertical-align: top;
+        text-transform: capitalize;
+        background-color: $llBlue;
+        color: $lightBlue;
+        padding: .4rem .5rem;
+        font-weight: 500;
+
+        button {
+            background-color: $darkBlue;
+            margin-left: 3px;
+            padding: 5px;
+            transition: $transition;
+            &:hover {
+                background-color: #000;
+            }
+        }
+    }
+}
+
+#clear {
+    font-size: 1.2rem;
+    color: $darkGrey;
+    transition: $transition;
+    &:hover {
+        color: $lightBlue;
+        text-decoration: underline;
+        cursor: pointer;
+    } 
+}
+
+
+
+.main_content {
+    background-color: $llBlue;
+    width: 100vw;
+    padding: 5rem 0;
+    gap: 10rem;
+
+}
+
+.item {
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: .8rem .5rem;
+    background-color: #fff;
+    border-radius: .4rem;
+    gap: 1.2rem;
+    margin-top: 1rem;
+
+
+
+
+    .profile_img {
+        flex: 2;
+        @include flex(row);
+    }
+
+
+    .about_person {
+        flex: 5;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+
+        .row_1 {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            text-transform: capitalize;
+
+            .position {
+                color: $lightBlue;
+                font-weight: bold;
+
+            }
+
+            .date {
+                background-color: $darkBlue;
+                color: #fff;
+                font-weight: bold;
+                @include flex(row);
+                padding: .2rem .6rem;
+                border-radius: .6rem;
+            }
+
+            .feature {
+                background-color: #000;
+                color: #fff;
+                font-weight: bold;
+                @include flex(row);
+                padding: .2rem .6rem;
+                border-radius: .6rem;
+            }
+        }
+
+        .row_2 {
+            font-weight: bold;
+            text-transform: capitalize;
+            font-size: 1.1rem;
+        }
+
+        .row_3 {
+            display: flex;
+            gap: .8rem;
+            font-weight: 600;
+            color: $darkGrey;
+            text-transform: capitalize;
+
+            .last_active {
+                text-transform: lowercase;
+            }
+        }
+    }
+
+    .stack {
+        flex: 4;
+        display: flex;
+        flex-wrap: wrap;
+        gap: .7rem;
+        text-transform: capitalize;
+
+        span {
+            background-color: $llBlue;
+            color:$lightBlue;
+            padding: .4rem .7rem;
+            font-weight: bold;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $darkBlue;
+                color: #fff;
+                transition: $transition;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    .item {
+        flex-direction: column;
+        position: relative;
+        align-items: baseline;
+        padding: 1.5rem 1.5rem 0rem 1.5rem;
+        gap: .5rem;
+        margin-bottom: 3rem;
+
+
+        .profile_img {
+            position: absolute;
+            top: -36px;
+            left: 5%;
+            img {
+                width: 64px;
+            }
+        }
+
+        .about_person {
+            border-bottom: 2.5px solid $darkGrey;
+            padding: 1rem 0;
+            width: 100%;
+        }
+
+        .stack {
+            margin-bottom: 1rem;
+            padding-top: .5rem;
+        }
+    }
+    .header {
+        .mobile {
+            display: block;
+        }
+        .desktop {
+            display: none;
+        }
+    }
+
+    .filter_con {
+        top: 13rem;
+    }
+}

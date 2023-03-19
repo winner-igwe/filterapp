@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+button, a {
+  cursor: pointer;
+  border: none;
+}
+
+.header {
+  width: 100vw;
+  min-height: 156px;
+  background-color: #5da5a4;
+}
+
+.header img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.header .mobile {
+  display: none;
+}
+
+.filter_con {
+  width: 80vw;
+  position: absolute;
+  left: 10%;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: .6rem 1.2rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 8.5rem;
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+.btn_span {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.btn_span .btn {
+  vertical-align: top;
+  text-transform: capitalize;
+  background-color: #edf5f7;
+  color: #64babb;
+  padding: .4rem .5rem;
+  font-weight: 500;
+}
+
+.btn_span .btn button {
+  background-color: #5da5a4;
+  margin-left: 3px;
+  padding: 5px;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.btn_span .btn button:hover {
+  background-color: #000;
+}
+
+#clear {
+  font-size: 1.2rem;
+  color: #898b8e;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+#clear:hover {
+  color: #64babb;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.main_content {
+  background-color: #edf5f7;
+  width: 100vw;
+  padding: 5rem 0;
+  gap: 10rem;
+}
+
+.item {
+  width: 80vw;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .8rem .5rem;
+  background-color: #fff;
+  border-radius: .4rem;
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.item .profile_img {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.item .about_person {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .5rem;
+}
+
+.item .about_person .row_1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .5rem;
+  text-transform: capitalize;
+}
+
+.item .about_person .row_1 .position {
+  color: #64babb;
+  font-weight: bold;
+}
+
+.item .about_person .row_1 .date {
+  background-color: #5da5a4;
+  color: #fff;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: .2rem .6rem;
+  border-radius: .6rem;
+}
+
+.item .about_person .row_1 .feature {
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: .2rem .6rem;
+  border-radius: .6rem;
+}
+
+.item .about_person .row_2 {
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+}
+
+.item .about_person .row_3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: .8rem;
+  font-weight: 600;
+  color: #898b8e;
+  text-transform: capitalize;
+}
+
+.item .about_person .row_3 .last_active {
+  text-transform: lowercase;
+}
+
+.item .stack {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: .7rem;
+  text-transform: capitalize;
+}
+
+.item .stack span {
+  background-color: #edf5f7;
+  color: #64babb;
+  padding: .4rem .7rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.item .stack span:hover {
+  background-color: #5da5a4;
+  color: #fff;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+@media screen and (max-width: 800px) {
+  .item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    padding: 1.5rem 1.5rem 0rem 1.5rem;
+    gap: .5rem;
+    margin-bottom: 3rem;
+  }
+  .item .profile_img {
+    position: absolute;
+    top: -36px;
+    left: 5%;
+  }
+  .item .profile_img img {
+    width: 64px;
+  }
+  .item .about_person {
+    border-bottom: 2.5px solid #898b8e;
+    padding: 1rem 0;
+    width: 100%;
+  }
+  .item .stack {
+    margin-bottom: 1rem;
+    padding-top: .5rem;
+  }
+  .header .mobile {
+    display: block;
+  }
+  .header .desktop {
+    display: none;
+  }
+  .filter_con {
+    top: 13rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,87 @@
+[
+    {
+      "id": 1,
+      "company": "TechNation",
+      "logo": "https://example.com/logos/technation.png",
+      "position": "Full-stack Developer",
+      "role": "Software Engineer",
+      "level": "Senior",
+      "languages": ["JavaScript", "Python", "Java"],
+      "new": false,
+      "featured": true,
+      "mode": "Full-time",
+      "postedAt": "2022-03-16T12:00:00Z",
+      "location": "Enugu"
+    },
+    {
+      "id": 2,
+      "company": "Code Wizards",
+      "logo": "https://example.com/logos/codewizards.png",
+      "position": "Front-end Developer",
+      "role": "Software Engineer",
+      "level": "Junior",
+      "languages": ["HTML", "CSS", "JavaScript"],
+      "new": true,
+      "featured": false,
+      "mode": "Contract",
+      "postedAt": "2022-03-15T09:30:00Z",
+      "location": "Imo"
+    },
+    {
+      "id": 3,
+      "company": "WebNinja",
+      "logo": "https://example.com/logos/webninja.png",
+      "position": "Back-end Developer",
+      "role": "Software Engineer",
+      "level": "Mid-level",
+      "languages": ["Python", "Ruby", "PHP"],
+      "new": false,
+      "featured": false,
+      "mode": "Full-time",
+      "postedAt": "2022-03-14T08:15:00Z",
+      "location": "Abia"
+    },
+    {
+      "id": 4,
+      "company": "CyberSolutions",
+      "logo": "https://example.com/logos/cybersolutions.png",
+      "position": "Data Analyst",
+      "role": "Data Science",
+      "level": "Senior",
+      "languages": ["Python", "SQL", "R"],
+      "new": true,
+      "featured": true,
+      "mode": "Full-time",
+      "postedAt": "2022-03-13T10:45:00Z",
+      "location": "Ebonyi"
+    },
+    {
+      "id": 5,
+      "company": "InnovateTech",
+      "logo": "https://example.com/logos/innovatetech.png",
+      "position": "DevOps Engineer",
+      "role": "Software Engineer",
+      "level": "Mid-level",
+      "languages": ["Python", "Bash", "AWS"],
+      "new": true,
+      "featured": false,
+      "mode": "Contract",
+      "postedAt": "2022-03-12T11:30:00Z",
+      "location": "Anambra"
+    },
+    {
+      "id": 6,
+      "company": "DigitalEmpowerment",
+      "logo": "https://example.com/logos/digitalempowerment.png",
+      "position": "UI/UX Designer",
+      "role": "Design",
+      "level": "Junior",
+      "languages": ["HTML", "CSS", "JavaScript"],
+      "new": false,
+      "featured": true,
+      "mode": "Full-time",
+      "postedAt": "2022-03-11T12:00:00Z",
+      "location": "Imo"
+    }
+    
+]

@@ -1,0 +1,16 @@
+$darkBlue: #5da5a4;
+$lightBlue: #64babb;
+$llBlue: #edf5f7;
+$darkGrey: #898b8e;
+
+
+//transition
+
+$transition: all .4s linear;
+
+@mixin flex($direction) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+    justify-content: center;
+}
